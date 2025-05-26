@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Public\Repos\!Testovoe\TZ_" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Project" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="EFractions.cs" t="Include" />
+            <e p="Enemy" t="Include">
+              <e p="Enemy FSM" t="Include">
+                <e p="EnemyFSM.cs" t="Include" />
+                <e p="EnemyStateFSM.cs" t="Include" />
+                <e p="States" t="Include">
+                  <e p="EnemyStateIdleFSM.cs" t="Include" />
+                  <e p="EnemyStatePutFSM.cs" t="Include" />
+                  <e p="EnemyStateTakeFSM.cs" t="Include" />
+                  <e p="EnemyStateWalkFSM.cs" t="Include" />
+                </e>
+              </e>
+              <e p="EnemyController.cs" t="Include" />
+            </e>
+            <e p="EntryPoint.cs" t="Include" />
+            <e p="Interfaces" t="Include">
+              <e p="IPutRecources.cs" t="Include" />
+              <e p="ITakeRource.cs" t="Include" />
+              <e p="IUdateResources.cs" t="Include" />
+              <e p="IUpdateTarget.cs" t="Include" />
+            </e>
+            <e p="Resource" t="Include">
+              <e p="ResourcePoint.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="TZ_.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_TZ_.1958030857.00" t="ExcludeRecursive" />
+  </component>
+</project>
