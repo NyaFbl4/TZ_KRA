@@ -4,6 +4,6 @@ namespace TZ.Enemy_FSM.Interfaces
 {
     public interface ITakeRources
     {
-        public void TakeResource(GameObject resource);
+        public void TakeResource(int  resource);
     }
 }

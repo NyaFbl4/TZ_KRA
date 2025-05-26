@@ -10,11 +10,8 @@ namespace TZ.Enemy
         [SerializeField] private float _walkSpeed;
         [SerializeField] private float _stoppingDistance;
         [SerializeField] private Transform _targetMove;
-        [SerializeField] private GameObject _targetTake;
         [SerializeField] private GameObject _baseFraction;
-        //[SerializeField] private Transform _resourcesPoint;
         [SerializeField] private int _resourcesCount;
-        
 
         private EnemyFSM _fsm;
         private EnemyStateIdleFSM _stateIdle;
@@ -35,7 +32,7 @@ namespace TZ.Enemy
                 _walkSpeed, _stoppingDistance, true);
             _fsm.AddState(_stateWalk);
             
-            _stateTake = new EnemyStateTakeFSM(_fsm, gameObject.transform);
+            _stateTake = new EnemyStateTakeFSM(_fsm);
             _fsm.AddState(_stateTake);
             
             _statePut = new EnemyStatePutFSM(_fsm, _resourcesCount);
@@ -87,6 +84,7 @@ namespace TZ.Enemy
         {
             _stateWalk.UpdateTarget(_baseFraction.transform);
             _statePut.UpdateResources(newResources);
+            _resourcesCount += newResources;
             UpdateTarget(_baseFraction.transform);
         }
 

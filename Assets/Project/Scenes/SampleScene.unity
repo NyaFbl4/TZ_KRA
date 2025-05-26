@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 250673003}
   m_Layer: 0
   m_Name: EnemyBase
-  m_TagString: Untagged
+  m_TagString: EnemyBase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -277,8 +277,8 @@ Transform:
   m_GameObject: {fileID: 250673002}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.27, y: -3.29, z: -0.07301857}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: -3.29, z: -0.07301857}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 358683071}
@@ -573,10 +573,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955026ce6d052e640981587c91dc523a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _walkSpeed: 5
+  _walkSpeed: 4
   _stoppingDistance: 1
   _targetMove: {fileID: 206946336}
-  _targetTake: {fileID: 206946334}
   _baseFraction: {fileID: 250673002}
   _resourcesCount: 0
 --- !u!4 &695455048
@@ -646,7 +645,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 2119758673}
   - {fileID: 206946336}
   - {fileID: 695455048}
   - {fileID: 250673003}
-  - {fileID: 2119758673}

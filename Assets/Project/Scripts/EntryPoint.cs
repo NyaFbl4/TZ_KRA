@@ -9,7 +9,6 @@ namespace TZ
         [SerializeField] private EnemyController _controller;
         [SerializeField] private GameObject _resource;
 
-
         private void Start()
         {
             _controller.UpdateTarget(_resource.transform);

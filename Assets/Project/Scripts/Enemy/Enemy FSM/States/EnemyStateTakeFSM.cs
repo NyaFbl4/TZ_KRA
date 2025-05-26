@@ -7,7 +7,7 @@ namespace TZ.Enemy_FSM
 {
     public class EnemyStateTakeFSM : EnemyStateFSM, ITakeRources, IUpdateTarget
     {
-        private Transform _transform;
+        private GameObject _resurceObj;
        // private Transform _resourcePoint;
         private Transform _targetResource;
         private int _resourceCount;
@@ -15,14 +15,20 @@ namespace TZ.Enemy_FSM
 
         public event Action<int> OnResurceTake;
         
-        public EnemyStateTakeFSM(EnemyFSM enemyFsm, Transform transform) : base(enemyFsm)
+        public EnemyStateTakeFSM(EnemyFSM enemyFsm) : base(enemyFsm)
         {
-            _transform = transform;
         }
 
         public override void EnterState()
         {
             Debug.Log("ENTER EnemyStateTakeFSM");
+            
+            if (_targetResource != null)
+            {
+                var resourcePoint = _targetResource.GetComponent<ResourcePoint>();
+
+                TakeResource(resourcePoint.PutResources());
+            }
         }
 
         public override void ExitState()
@@ -32,30 +38,18 @@ namespace TZ.Enemy_FSM
 
         public override void UpdateState()
         {
-            TakeResource(_targetResource.gameObject);
+            
         }
 
         public void UpdateTarget(Transform newTarget)
         {
             _targetResource = newTarget;
         }
-        
-        public void TakeResource(GameObject resource)
-        {
-            if (resource != null)
-            {
-                var resourcePoint = resource.GetComponent<ResourcePoint>();
 
-                if (resourcePoint != null)
-                {
-                    _resourceCount = resourcePoint.PutResources();
-                    OnResurceTake?.Invoke(_resourceCount);
-                }
-            }
-            else
-            {
-                Debug.Log("net tergeta");
-            }
+        public void TakeResource(int resource)
+        {
+            _resourceCount = resource;
+            OnResurceTake?.Invoke(_resourceCount);
         }
     }
 }
