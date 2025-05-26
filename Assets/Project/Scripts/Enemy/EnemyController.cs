@@ -74,17 +74,20 @@ namespace TZ.Enemy
             }
             else if (gameObject.tag == "EnemyBase")
             {
+                Debug.Log(gameObject.tag);
                 _fsm.SetState<EnemyStatePutFSM>();
-
+                //_statePut.Up
                 OnPutResoutces?.Invoke(_resourcesCount);
             }
         }
         
         private void HandleResourceTake(int newResources)
         {
-            _stateWalk.UpdateTarget(_baseFraction.transform);
-            _statePut.UpdateResources(newResources);
             _resourcesCount += newResources;
+            
+            _stateWalk.UpdateTarget(_baseFraction.transform);
+            _statePut.UpdateTarget(_baseFraction.transform);
+            _statePut.TakeResource(newResources);
             UpdateTarget(_baseFraction.transform);
         }
 

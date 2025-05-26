@@ -9,7 +9,7 @@ namespace TZ.Enemy_FSM
     {
         private GameObject _resurceObj;
        // private Transform _resourcePoint;
-        private Transform _targetResource;
+        private Transform _target;
         private int _resourceCount;
         private ITakeRources _takeRourcesImplementation;
 
@@ -23,11 +23,11 @@ namespace TZ.Enemy_FSM
         {
             Debug.Log("ENTER EnemyStateTakeFSM");
             
-            if (_targetResource != null)
+            if (_target != null)
             {
-                var resourcePoint = _targetResource.GetComponent<ResourcePoint>();
+                var targetPoint = _target.GetComponent<ResourcePoint>();
 
-                TakeResource(resourcePoint.PutResources());
+                TakeResource(targetPoint.PutResources());
             }
         }
 
@@ -43,7 +43,7 @@ namespace TZ.Enemy_FSM
 
         public void UpdateTarget(Transform newTarget)
         {
-            _targetResource = newTarget;
+            _target = newTarget;
         }
 
         public void TakeResource(int resource)

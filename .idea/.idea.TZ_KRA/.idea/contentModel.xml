@@ -20,6 +20,7 @@
                   <e p="EnemyStateWalkFSM.cs" t="Include" />
                 </e>
               </e>
+              <e p="EnemyBaseController.cs" t="Include" />
               <e p="EnemyController.cs" t="Include" />
             </e>
             <e p="EntryPoint.cs" t="Include" />

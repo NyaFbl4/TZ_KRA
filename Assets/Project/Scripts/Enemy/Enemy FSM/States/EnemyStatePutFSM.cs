@@ -1,10 +1,12 @@
-﻿using TZ.Enemy_FSM.Interfaces;
+﻿using TZ.Enemy;
+using TZ.Enemy_FSM.Interfaces;
 using UnityEngine;
 
 namespace TZ.Enemy_FSM
 {
-    public class EnemyStatePutFSM : EnemyStateFSM, IPutRecources, IUpdateResources
+    public class EnemyStatePutFSM : EnemyStateFSM, IPutRecources, ITakeRources ,IUpdateTarget
     {
+        private Transform _target;
         private int _resourcesCount;
 
         public EnemyStatePutFSM(EnemyFSM enemyFsm, int resourcesCount) : base(enemyFsm)
@@ -15,6 +17,12 @@ namespace TZ.Enemy_FSM
         public override void EnterState()
         {
             Debug.Log("Enter EnemyStatePutFSM");
+            if (_target != null)
+            {
+                var targetPoint = _target.GetComponent<ITakeRources>();
+
+                targetPoint.TakeResource(PutResources());
+            }
         }
 
         public override void ExitState()
@@ -34,9 +42,14 @@ namespace TZ.Enemy_FSM
             return _resourcesCount;
         }
 
-        public void UpdateResources(int newResources)
+        public void UpdateTarget(Transform newTarget)
         {
-            _resourcesCount = newResources;
+            _target = newTarget;
+        }
+
+        public void TakeResource(int resource)
+        {
+            _resourcesCount = resource;
         }
     }
 }

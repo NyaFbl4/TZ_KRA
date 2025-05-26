@@ -76,7 +76,6 @@ namespace TZ.Enemy_FSM
             }
             else
             {
-                // Если уже достаточно близко — считаем, что достиг цели
                 Debug.Log("уже достаточно близко");
                 OnReachedTarget?.Invoke(_targetTransform);
             }
