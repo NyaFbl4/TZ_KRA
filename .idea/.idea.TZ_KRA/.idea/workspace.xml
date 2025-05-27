@@ -15,12 +15,13 @@
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Enemy FSM/States/EnemyStateTakeFSM.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/EnemyBaseController.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Interfaces/IPutRecources.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Resource/ResourcePoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Enemy FSM/States/EnemyStatePutFSM.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/FindNearestResource.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/NearestResourceFinder .cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Interfaces/IFindNearest.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/NearestResourceFinder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Enemy FSM/States/EnemyStateWalkFSM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Resource/ResourcePoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/EnemyController.cs" />
     </changedPaths>
   </component>
@@ -64,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748334263405</updated>
-      <workItem from="1748334268585" duration="2550000" />
+      <workItem from="1748334268585" duration="3738000" />
     </task>
     <servers />
   </component>

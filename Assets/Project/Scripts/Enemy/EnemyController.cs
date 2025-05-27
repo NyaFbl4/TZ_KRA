@@ -79,6 +79,7 @@ namespace TZ.Enemy
                 Debug.Log(gameObject.tag);
                 _fsm.SetState<EnemyStatePutFSM>();
                 OnPutResoutces?.Invoke(_resourcesCount);
+                _resourcesCount = 0;
                 UpdateTarget(_findNearest.FindNearest().transform);
             }
         }
@@ -98,17 +99,16 @@ namespace TZ.Enemy
             if (newTarget != null)
             {
                 _targetMove = newTarget;
-
-                if (newTarget != _baseFraction)
-                {
-                    //_targetTake = newTarget;
-                }
-
-                if (_stateWalk != null)
-                {
-                    _stateWalk.UpdateTarget(_targetMove);
-                    _fsm.SetState<EnemyStateWalkFSM>();
-                }
+            }
+            else
+            {
+                _targetMove = _findNearest.FindNearest().transform;
+            }
+            
+            if (_stateWalk != null)
+            {
+                _stateWalk.UpdateTarget(_targetMove);
+                _fsm.SetState<EnemyStateWalkFSM>();
             }
         }
     }

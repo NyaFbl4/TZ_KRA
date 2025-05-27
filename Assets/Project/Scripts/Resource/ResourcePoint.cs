@@ -9,7 +9,6 @@ namespace TZ.Resource
         
         public int PutResources()
         {
-            Debug.Log("ResourcePoint put " + _resourcesCount);
             Destroy(gameObject);
             return _resourcesCount;
         }
