@@ -12,9 +12,15 @@
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Interfaces/ITakeRource.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/EntryPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/EnemyBAseController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/EnemyBaseController.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Enemy FSM/States/EnemyStateTakeFSM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/EnemyBaseController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Interfaces/IPutRecources.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Resource/ResourcePoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/Enemy FSM/States/EnemyStatePutFSM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/FindNearestResource.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/NearestResourceFinder .cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Interfaces/IFindNearest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/NearestResourceFinder.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Enemy/EnemyController.cs" />
     </changedPaths>
   </component>
@@ -25,9 +31,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -48,9 +57,23 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8848a653-7b5a-4e1c-a640-cdd90cc1f7ea" name="Default Changelist" comment="" />
+      <created>1748334263405</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748334263405</updated>
+      <workItem from="1748334268585" duration="2550000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
 </project>

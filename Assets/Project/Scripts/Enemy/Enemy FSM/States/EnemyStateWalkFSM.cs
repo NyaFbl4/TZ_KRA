@@ -79,25 +79,6 @@ namespace TZ.Enemy_FSM
                 Debug.Log("уже достаточно близко");
                 OnReachedTarget?.Invoke(_targetTransform);
             }
-            
-            /*
-            Vector3 newPosition = Vector3.MoveTowards(
-                currentPos,
-                targetPos,  // Без фиксации Y, двигаемся к полной позиции цели
-                _speed * Time.deltaTime
-            );
-
-            _transform.position = newPosition;
-
-            float distance = Vector2.Distance(
-                new Vector2(_transform.position.x, _transform.position.y),
-                new Vector2(targetPos.x, targetPos.y));
-
-            if (distance < 0.1f)
-            {
-                OnReachedTarget?.Invoke(_targetTransform);
-            }
-            */
         }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace TZ.Enemy_FSM
 {
-    public class EnemyStatePutFSM : EnemyStateFSM, IPutRecources, ITakeRources ,IUpdateTarget
+    public class EnemyStatePutFSM : EnemyStateFSM, IPutResources , ITakeRources ,IUpdateTarget
     {
         private Transform _target;
         private int _resourcesCount;

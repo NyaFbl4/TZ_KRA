@@ -1,6 +1,6 @@
 ﻿namespace TZ.Enemy_FSM.Interfaces
 {
-    public interface IPutRecources
+    public interface IPutResources 
     {
         public int PutResources();
     }

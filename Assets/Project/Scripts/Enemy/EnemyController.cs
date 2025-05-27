@@ -7,6 +7,8 @@ namespace TZ.Enemy
 {
     public class EnemyController : MonoBehaviour, IUpdateTarget
     {
+        [SerializeField] private EFractions _fractionEnemy;
+        [SerializeField] private NearestResourceFinder _findNearest;
         [SerializeField] private float _walkSpeed;
         [SerializeField] private float _stoppingDistance;
         [SerializeField] private Transform _targetMove;
@@ -76,8 +78,8 @@ namespace TZ.Enemy
             {
                 Debug.Log(gameObject.tag);
                 _fsm.SetState<EnemyStatePutFSM>();
-                //_statePut.Up
                 OnPutResoutces?.Invoke(_resourcesCount);
+                UpdateTarget(_findNearest.FindNearest().transform);
             }
         }
         

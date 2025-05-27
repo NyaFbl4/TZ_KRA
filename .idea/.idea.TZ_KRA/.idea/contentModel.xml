@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\lomok\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\lomok\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_TZ_KRA.1676269698.00" t="ExcludeRecursive" />
-    <e p="D:\PROEKTbI\TZ_KRA" t="IncludeRecursive">
+    <e p="C:\Users\Public\Repos\!Testovoe\TZ_KRA" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Project" t="Include">
@@ -22,10 +20,12 @@
               </e>
               <e p="EnemyBaseController.cs" t="Include" />
               <e p="EnemyController.cs" t="Include" />
+              <e p="NearestResourceFinder.cs" t="Include" />
             </e>
             <e p="EntryPoint.cs" t="Include" />
             <e p="Interfaces" t="Include">
-              <e p="IPutRecources.cs" t="Include" />
+              <e p="IFindNearest.cs" t="Include" />
+              <e p="IPutResources.cs" t="Include" />
               <e p="ITakeRource.cs" t="Include" />
               <e p="IUdateResources.cs" t="Include" />
               <e p="IUpdateTarget.cs" t="Include" />
@@ -41,5 +41,7 @@
       <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="TZ_KRA.sln" t="IncludeFlat" />
     </e>
+    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_TZ_KRA.812403567.00" t="ExcludeRecursive" />
   </component>
 </project>
